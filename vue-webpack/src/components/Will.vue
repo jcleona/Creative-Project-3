@@ -129,7 +129,8 @@ export default {
          abbr.toUpperCase();
          st = table[ abbr ];
          if ( st === void 0 ) {
-         throw new Error( 'unrecognized state abbreviation. Value: `' + abbr + '`.' );
+          st = abbr;
+         // throw new Error( 'unrecognized state abbreviation. Value: `' + abbr + '`.' );
        }
        return st;
       }
